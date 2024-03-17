@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js", // Path to your main Node.js application file
+      "use": "@vercel/node" // Use the @vercel/node builder for Node.js apps
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)", // Route pattern to match all requests
+      "dest": "/index.js" // Redirect all requests to your main application file
+    }
+  ]
+}
